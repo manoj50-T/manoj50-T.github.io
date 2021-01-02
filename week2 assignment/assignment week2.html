@@ -1,27 +1,19 @@
-/* Base Styles */
 
-* {
-	box-sizing: border-box;
-}
-
-h1 {
-	font-family: Brushstroke, fantasy;
-	color: #000000;
-	text-align: center;
-}
-
-body {
-	background-image: url("background.jpg");
-	background-color: #ffffff;
-
-}
-
-p {
-	padding: 10px;
-	margin: 0;
-}
-
-.container {
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,intial-scale=1">
+	<title>Coursera Assignment</title>
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+	h1{
+		margin-bottom: 15px;
+	}
+	
+	.container {
 	border: none;
 	margin-left: auto;
 	margin-right: auto;
@@ -32,64 +24,56 @@ p {
 
 section {
 	border:	1px solid black;
-	background-color: #808050;
+	background-color: #bfbfbf;
 	width: 100%;
 	height: 200px;
-	font-family: Helvetica;
+	font-family: "cursive";
 	color: black;
 	position: relative;
 	overflow: auto;
 }
-
 #chicken {
 	border: 1px solid black;
 	text-align: center;
 	width: 30%;
-	margin-left: 70%;
+	margin-left:70%;
 	font-family: Georgia,sans-serif;
 	font-weight: bold;
 	font-size: 125%;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 5px;
-	background-color: #FF00FF;
+	background-color: #f08080;
 }
-
-#beef {
+#Sushi {
 	border: 1px solid black;
 	text-align: center;
 	width: 30%;
-	margin-left: 70%;
+	margin-left:70%;
 	font-family: Georgia,sans-serif;
 	font-weight: bold;
 	font-size: 125%;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 5px;
-	background-color: #FF1439;
+	background-color: #eee8aa;
 }
-
-#sushi {
+#Beef {
 	border: 1px solid black;
 	text-align: center;
 	width: 30%;
-	margin-left: 70%;
+	margin-left:70%;
 	font-family: Georgia,sans-serif;
 	font-weight: bold;
 	font-size: 125%;
 	margin-bottom: 0;
 	margin-top: 0;
-	background-color: #6495ED;
-	color: white;
 	padding: 5px;
+	background-color: #b22222;
 }
-
-.row {
+.row{
 	width: 100%;
 }
-
-/* Desktop view */
-
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
@@ -131,12 +115,8 @@ section {
   .col-lg-12 {
     width: 100%;
   }
-
 }
-
-/* Tablet view */
-
-@media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
@@ -178,10 +158,7 @@ section {
     width: 100%;
   }
 }
-
-/* Mobile view */
-
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
  	float: left;
   }
@@ -223,3 +200,38 @@ section {
     width: 100%;
   }
 }
+p {
+	padding: 10px;
+	margin: 0;
+}
+
+</head
+	</style>
+
+<body>
+
+	<h1 align="center">Our Menu</h1>
+
+    <div class="row">	
+        <div class="container col-lg-4 col-md-6 col-sm-12">
+        	<section>
+        	<div align="right" id="chicken">chicken</div>
+        	<p>lorem ipsum dolor sit amet,consectetut adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercition ullamco laboris nisi ut aliquip ex ea</p>
+        </section></div>
+
+
+        <div class="container col-lg-4 col-md-6 col-sm-12 " >
+        	<section>
+        	<div align="right" id="Beef">Beef</div>
+        	<p>lorem ipsum dolor sit amet,consectetut adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercition ullamco laboris nisi ut aliquip ex ea</p>
+        </section></div>
+
+        <div class="container col-lg-4 col-md-12 col-sm-12">
+        	<section>
+        	<div align="right" id="Sushi">Sushi</div>
+        		<p>lorem ipsum dolor sit amet,consectetut adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercition ullamco laboris nisi ut aliquip ex ea</p>
+        	</section></div>
+    </div>
+
+</body>
+</html>
